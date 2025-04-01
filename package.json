@@ -1,0 +1,25 @@
+{
+  "name": "bytemorph",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Kumud2908/ByteMorph#readme",
+  "bugs": {
+    "url": "https://github.com/Kumud2908/ByteMorph/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kumud2908/ByteMorph.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev":"nodemon api/index.js",
+    "start":"node api/index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.9"
+  }
+}
