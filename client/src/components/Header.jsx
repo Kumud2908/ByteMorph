@@ -1,24 +1,28 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+
 export default function Header() {
   return (
-    <div className='bg-slate-200'>
-      <div className="flex justify-between itims-center max-w-6xl mx-auto p-3">
-        <h1 className='font-bold'>Auth App</h1>
-        <ul className='flex gap-4'>
-          <Link to="/">
-            <li>Home</li>
-          </Link>
-          <Link to='/about'>
-            <li>About</li>
-          </Link>
-          <Link to='sign-in'>
-            <li>Sign-in</li>
-          </Link>                
+    <nav className="bg-slate-200 shadow-md">
+      <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <h1 className="font-bold text-xl">Auth App</h1>
+        <ul className="flex gap-6 text-lg">
+          <li>
+            <Link to="/" className="hover:text-blue-500">Home</Link>
+          </li>
+          <li>
+            <Link to="/about" className="hover:text-blue-500">About</Link>
+          </li>
+          <li>
+            <Link to="/signin" className="hover:text-blue-500">Sign-in</Link>
+          </li>
+          <li>
+            <Link to="/signup" className="hover:text-blue-500">Sign-Up</Link>
+          </li>
         </ul>
       </div>
-      
-    </div>
-  )
+    </nav>
+  );
 }
+
